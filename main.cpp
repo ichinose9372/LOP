@@ -20,10 +20,9 @@ int main()
         } 
         graph.addEdge(from, to, distance);
     }
-
-    graph.allview();
-
+    // graph.allview();
 
     // 最長経路の探索など、その他の処理
+    graph.findLongestPath(graph, 10);
     return 0;
 }

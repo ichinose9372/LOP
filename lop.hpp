@@ -21,6 +21,8 @@ class Graph
         void addEdge(int from, int to, double distance); //辺の追加
         const std::vector<Edge>& getEdges(int from) const; //辺の取得
         void allview(void);
+        void dfs(const Graph& graph, int node, std::vector<bool>& visited, std::vector<int>& path, std::vector<int>& longestPath, double& maxLength, double currentLength);
+        void findLongestPath(const Graph& graph, int numNodes);
 };
 
 

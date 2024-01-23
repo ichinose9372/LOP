@@ -67,13 +67,14 @@ void Graph::findLongestPath(const Graph& graph, int numNodes) {
 
     double maxLength = 0;
 
-    for (int i = 0; i < numNodes; i++) {
+    for (int i = 0; i < numNodes; i++) 
+    {
         dfs(graph, i, visited, path, longestPath, maxLength, 0);
     }
 
-    std::cout << std::flush;
+    std::cout << std::endl;
     for (size_t i = 0; i < longestPath.size(); ++i) 
     {
-        std::cout << longestPath[i] << " \r\n";
+        std::cout << longestPath[i] << "\n";
     }
 }

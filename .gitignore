@@ -33,4 +33,4 @@ objs
 *.exe
 *.out
 *.app
-*.Lop
+Lop

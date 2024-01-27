@@ -34,3 +34,4 @@ objs
 *.out
 *.app
 Lop
+.vscode
